@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUa-ay-uQW" userLabel="MainButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUa-ay-uQW" userLabel="Start">
                                 <rect key="frame" x="145" y="843" width="140" height="40"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
@@ -25,21 +25,21 @@
                                     <color key="titleColor" systemColor="systemRedColor"/>
                                 </state>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMN-iN-Ihz" userLabel="TrafficLight">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMN-iN-Ihz" userLabel="TrafficLightBase">
                                 <rect key="frame" x="145" y="269" width="140" height="394"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="DMq-T2-7Ot" userLabel="TrafficSignals">
                                         <rect key="frame" x="20" y="20" width="100" height="354"/>
                                         <subviews>
-                                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXA-hE-Geo" userLabel="Red">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXA-hE-Geo" userLabel="Red">
                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                             </view>
-                                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Owm-VV-vPA" userLabel="Yellow">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Owm-VV-vPA" userLabel="Yellow">
                                                 <rect key="frame" x="0.0" y="127" width="100" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                             </view>
-                                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qO-JH-N4k" userLabel="Green">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qO-JH-N4k" userLabel="Green">
                                                 <rect key="frame" x="0.0" y="254" width="100" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                             </view>
@@ -66,6 +66,10 @@
                             <constraint firstItem="lUa-ay-uQW" firstAttribute="leading" secondItem="gMN-iN-Ihz" secondAttribute="leading" id="i7C-Fg-5zq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="trafficLightBaseLabel" destination="gMN-iN-Ihz" id="g9a-Bz-s1F"/>
+                        <outlet property="trafficLightSwitchButton" destination="lUa-ay-uQW" id="jc0-EQ-hjO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7AD4D9932A6CFF5D00955614 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD4D9922A6CFF5D00955614 /* AppDelegate.swift */; };
 		7AD4D9952A6CFF5D00955614 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD4D9942A6CFF5D00955614 /* SceneDelegate.swift */; };
-		7AD4D9972A6CFF5D00955614 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD4D9962A6CFF5D00955614 /* ViewController.swift */; };
+		7AD4D9972A6CFF5D00955614 /* VCTrafficLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD4D9962A6CFF5D00955614 /* VCTrafficLight.swift */; };
 		7AD4D99A2A6CFF5D00955614 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD4D9982A6CFF5D00955614 /* Main.storyboard */; };
 		7AD4D99C2A6CFF5E00955614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD4D99B2A6CFF5E00955614 /* Assets.xcassets */; };
 		7AD4D99F2A6CFF5E00955614 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD4D99D2A6CFF5E00955614 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		7AD4D98F2A6CFF5D00955614 /* HomeWork 2.02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HomeWork 2.02.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD4D9922A6CFF5D00955614 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AD4D9942A6CFF5D00955614 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7AD4D9962A6CFF5D00955614 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7AD4D9962A6CFF5D00955614 /* VCTrafficLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTrafficLight.swift; sourceTree = "<group>"; };
 		7AD4D9992A6CFF5D00955614 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AD4D99B2A6CFF5E00955614 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AD4D99E2A6CFF5E00955614 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				7AD4D9922A6CFF5D00955614 /* AppDelegate.swift */,
 				7AD4D9942A6CFF5D00955614 /* SceneDelegate.swift */,
-				7AD4D9962A6CFF5D00955614 /* ViewController.swift */,
+				7AD4D9962A6CFF5D00955614 /* VCTrafficLight.swift */,
 				7AD4D9982A6CFF5D00955614 /* Main.storyboard */,
 				7AD4D99B2A6CFF5E00955614 /* Assets.xcassets */,
 				7AD4D99D2A6CFF5E00955614 /* LaunchScreen.storyboard */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AD4D9972A6CFF5D00955614 /* ViewController.swift in Sources */,
+				7AD4D9972A6CFF5D00955614 /* VCTrafficLight.swift in Sources */,
 				7AD4D9932A6CFF5D00955614 /* AppDelegate.swift in Sources */,
 				7AD4D9952A6CFF5D00955614 /* SceneDelegate.swift in Sources */,
 			);
