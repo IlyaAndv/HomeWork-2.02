@@ -25,16 +25,20 @@ final class ViewController: UIViewController {
     
     @IBAction func pressTrafficLightButton(_ sender: UIButton) {
         sender.setTitle("NEXT", for: .normal)
-        
+        sender.setTitleColor(.black, for: .normal)
+    
         if redTrafficSignalLabel.alpha == 1 {
             yellowTrafficSignalLabel.alpha = 1
             redTrafficSignalLabel.alpha = 0.3
+            sender.backgroundColor = .green
         } else if yellowTrafficSignalLabel.alpha == 1 {
             greenTrafficSignalLabel.alpha = 1
             yellowTrafficSignalLabel.alpha = 0.3
+            sender.backgroundColor = .red
         } else {
             redTrafficSignalLabel.alpha = 1
             greenTrafficSignalLabel.alpha = 0.3
+            sender.backgroundColor = .yellow
         }
     }
 }
