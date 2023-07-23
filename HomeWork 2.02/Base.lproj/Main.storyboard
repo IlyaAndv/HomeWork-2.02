@@ -24,6 +24,9 @@
                                 <state key="normal" title="START">
                                     <color key="titleColor" systemColor="systemPinkColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="pressTrafficLightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y3p-hr-fgL"/>
+                                </connections>
                             </button>
                             <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMN-iN-Ihz" userLabel="TrafficLightBase">
                                 <rect key="frame" x="145" y="269" width="140" height="394"/>

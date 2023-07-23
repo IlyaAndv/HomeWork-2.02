@@ -8,7 +8,6 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
     @IBOutlet var trafficLightSwitchButton: UIButton!
     @IBOutlet var trafficLightBaseLabel: UIView!
     @IBOutlet var redTrafficSignalLabel: UIView!
@@ -24,7 +23,18 @@ final class ViewController: UIViewController {
         greenTrafficSignalLabel.layer.cornerRadius = 47
     }
     
-    
-
+    @IBAction func pressTrafficLightButton(_ sender: UIButton) {
+        sender.setTitle("NEXT", for: .normal)
+        
+        if redTrafficSignalLabel.alpha == 1 {
+            yellowTrafficSignalLabel.alpha = 1
+            redTrafficSignalLabel.alpha = 0.3
+        } else if yellowTrafficSignalLabel.alpha == 1 {
+            greenTrafficSignalLabel.alpha = 1
+            yellowTrafficSignalLabel.alpha = 0.3
+        } else {
+            redTrafficSignalLabel.alpha = 1
+            greenTrafficSignalLabel.alpha = 0.3
+        }
+    }
 }
-
